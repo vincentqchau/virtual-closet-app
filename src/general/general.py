@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Blueprint, render_template
 
 general_bp = Blueprint('general_bp', __name__, 
     template_folder='templates/general', 
@@ -8,5 +8,5 @@ general_bp = Blueprint('general_bp', __name__,
 @general_bp.route('/')
 
 def home():
-    return render_template('home.html')
+    return render_template('index.html')
 

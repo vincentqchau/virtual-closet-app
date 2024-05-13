@@ -1,0 +1,21 @@
+{% extends 'base.html' %} 
+
+{% block title %} Virtual Closet - Login {% endblock %}
+
+{% block content %}
+    <body class="bg-dark">
+        <div class="container">
+            <div class="position-absolute top-50 start-50 translate-middle">
+                <form action="" method="POST">
+                    <div class="form-group text-light">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" name="email" required/>
+                        <label for="password">Password</label>
+                        <input type="password" class="form-control" id="password" name="password" required/>
+                        <button type="submit" class="btn btn-primary float-end mt-3">Login</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+{% endblock %}
